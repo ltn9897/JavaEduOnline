@@ -1,0 +1,26 @@
+Visa test
+Card Type: Visa
+
+Card Number: 4032037259299895
+
+Expiration Date: 06/2026
+
+CVV: 145
+
+
+Account PP Test : 
+sb-47bsbg14254393@personal.example.com
+.68.PmTk
+
+
+
+sandbox.account = sb-4dxa314254209@business.example.com
+client_id = ATNmz7NaSvnCl1jq5kkub9a0jB8chvoO7VWkYSdZMSVTThE80teaQCyYuIIU-viT9-C9bsB7pca_dEhr
+secret_key = EPvXfu7wGWNtrVgVmSrkwTUBQMzYNbLi0gE0fWbfg63XNOkmwkpmfytv3UjgMym9hoJMzdk-J4KRObiu
+
+Sandbox.URL = https://api-m.sandbox.paypal.com
+
+
+
+
+
