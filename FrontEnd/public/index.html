@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, shrink-to-fit=9">
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Cursus</title>
+		
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="images/fav.png">
+		
+		<!-- Stylesheets -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+		<link href="/vendor/unicons-2.0.1/css/unicons.css" rel="stylesheet">
+		<link href="/css/vertical-responsive-menu.min.css" rel="stylesheet">
+		<link href="/css/style.css" rel="stylesheet">
+		<link href="/css/responsive.css" rel="stylesheet">
+		<link href="/css/night-mode.css" rel="stylesheet">
+    <link href="/css/datepicker.min.css" rel="stylesheet">
+    <link href="/css/instructor-dashboard.css" rel="stylesheet">
+		<link href="/css/instructor-responsive.css" rel="stylesheet">
+		<link href="/css/jquery-steps.css" rel="stylesheet">
+    <link href="/css/alert.css" rel="stylesheet">
+		
+		<!-- Vendor Stylesheets -->
+		<link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+		<link href="/vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+		<link href="/vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet"  href="/vendor/semantic/semantic.min.css">	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<!-- <link href="/vendor/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">		 -->
+		
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      
+      
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script type="text/babel">
+      if(localStorage.getItem("role")=='ROLE_ADMIN'){
+
+      }
+      else {
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100103032642302");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      }
+    </script>
+
+    <!-- Your SDK code -->
+    <script type="text/babel">
+      if(localStorage.getItem("role")=='ROLE_ADMIN'){}
+      else {
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    }
+    </script>
+    
+    <script src="https:code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery-3.3.1.min.js" type="text/babel" ></script>
+    <script src="%PUBLIC_URL%/js/vertical-responsive-menu.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/vendor/OwlCarousel/owl.carousel.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/vendor/semantic/semantic.min.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/js/custom.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/js/night-mode.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/js/datepicker.min.js" type="text/babel"></script>
+	  <script src="%PUBLIC_URL%/js/i18n/datepicker.en.js" type="text/babel"></script>
+    <script src="%PUBLIC_URL%/vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/babel"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
+	  <script src="%PUBLIC_URL%/js/jquery-steps.min.js" type="text/babel"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js" type="text/babel"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js" type="text/babel"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=ATNmz7NaSvnCl1jq5kkub9a0jB8chvoO7VWkYSdZMSVTThE80teaQCyYuIIU-viT9-C9bsB7pca_dEhr"></script>
+    <script defer src="https://www.paypal.com/sdk/js?client-id=ATNmz7NaSvnCl1jq5kkub9a0jB8chvoO7VWkYSdZMSVTThE80teaQCyYuIIU-viT9-C9bsB7pca_dEhr"></script>
+    
+  </body>
+</html>

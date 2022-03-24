@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+
+
+
+
+.btn_grp .btn.btn_info,
+.alert_item.alert_info{
+	background: #cde8f5;
+	color: #4480ae;
+}
+
+.btn_grp .btn.btn_warning,
+.alert_item.alert_warning{
+	background: #f7f899;
+	color: #fcac00;
+}
+
+.btn_grp .btn.btn_error,
+.alert_item.alert_error{
+	background: #f7938a;
+	color: #ee1410;
+}
+
+.alert_item.alert_success{
+	background: hsl(140, 67%, 72%);
+	color: #0d5a19;
+}
+
+.alert_confirm.alert_success{
+	background: hsl(60, 100%, 100%);
+	color: #f1331a;
+}
+
+
+
+
+.alert_wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	/* visibility: hidden; */
+    
+}
+
+.alert_wrapper .alert_item{
+	z-index: 3;	
+	position: fixed;
+	top: -90%;
+	left: 91%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	padding: 10px 50px;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+
+.alert_wrapper .alert_confirm{
+	z-index: 3;	
+	position:absolute;
+	top: 90%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	padding: 20px 90px;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+.alert_wrapper .alert_confirmm{
+	z-index: 3;	
+	position:absolute;
+	top: 1000%;
+	left: 48%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+	padding: 20px 90px;
+	border-radius: 5px;
+	transition: all 0.2s ease;
+}
+ 
+.alert_wrapper .alert_item .data{
+	margin: 0 20px;
+}
+
+.alert_wrapper .alert_confirm .data{
+	margin: 0 40px;
+} 
+
+.alert_wrapper .alert_item .data .title{
+	font-size: 16px;
+	margin-bottom: 5px;
+    color: rgb(15, 17, 15);
+}
+
+.alert_wrapper .alert_confirm .data .title{
+	font-size: 16px;
+	margin-bottom: 5px;
+    color: rgb(15, 17, 15);
+} 
+.alert_wrapper .alert_item .data span{
+	font-weight: 600;
+}
+.alert_wrapper .alert_confirm .data span{
+	font-weight: 600;
+}
+.alert_wrapper .alert_item .data .sub{
+	font-size: 14px;
+	font-weight: 100;
+}
+.alert_wrapper .alert_confirm .data .sub{
+	font-size: 14px;
+	font-weight: 100;
+}
+.alert_wrapper .alert_item .icon{
+	font-size: 18px;
+}
+.alert_wrapper .alert_confirm .icon{
+	font-size: 18px;
+}
+
+.alert_wrapper .alert_item{
+	top: 14%;
+    opacity: 0.7;
+}
+.alert_wrapper .alert_confirm{
+	top: 14%;
+    
+}
+
+
+  .cd-popup{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 1;
+	background-color: rgba(94, 110, 141, 0.9);
+	
+  }
+  
+  .cd-popup-container {
+	z-index: 3;	
+	position: absolute;
+	top: 90%;
+	left: 31%;
+	width: 90%;
+	max-width: 400px;
+	margin: 4em auto;
+	background: #FFF;
+	border-radius: .25em .25em .4em .4em;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	
+	/* Force Hardware Acceleration in WebKit */
+	/* -webkit-backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s; */
+  }
+  .cd-popup-container p {
+	padding: 3em 1em;
+  }
+  .cd-popup-container .cd-buttons:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .cd-popup-container .cd-buttons li {
+	float: left;
+	width: 50%;
+	list-style: none;
+  }
+  .cd-popup-container .cd-buttons a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: rgb(63, 58, 58);
+  }
+  .cd-popup-container .cd-buttons li:first-child a {
+	background: #fc7169;
+	border-radius: 0 0 0 .25em;
+	
+  }
+  .cd-popup-container .cd-buttons li:first-child a:hover {
+	background-color: #d6322a;
+	color: #FFF;
+  }
+  .cd-popup-container .cd-buttons li:last-child a {
+	background: #b6bece;
+	border-radius: 0 0 .25em 0;
+  }
+  .cd-popup-container .cd-buttons li:last-child a:hover {
+	background-color: #8b8e92;
+	color: #FFF;
+  }
+  .cd-popup-container .cd-popup-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 30px;
+	height: 30px;
+  }
+  .cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+	content: '';
+	position: absolute;
+	top: 12px;
+	width: 14px;
+	height: 3px;
+	/* background-color: #8f9cb5; */
+  }
+  .cd-popup-container .cd-popup-close::before {
+	left: 8px;
+  }
+  .cd-popup-container .cd-popup-close::after {
+	right: 8px;
+  }
+ 
